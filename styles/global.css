@@ -58,18 +58,21 @@ address {
   letter-spacing: 0%;
 }
 
-/* .aligned-text {
+.aligned-text {
   display: block;
-  
 }
 .aligned-text-center {
   display: block;
+  padding-top: 15px;
+  padding-left: 15px;
   text-align: center;
 }
 .aligned-text-right {
   display: block;
+  padding-top: 20px;
+  padding-left: 85px;
   text-align: right;
-} */
+}
 
 article {
   margin: 0;
@@ -92,9 +95,13 @@ div {
   letter-spacing: 0;
 }
 .letter-spacing-extended {
-  letter-spacing: 1.3rem;
+  letter-spacing: 1.8rem;
   /* text-indent: 1.3em; */
 }
 .block {
   display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
