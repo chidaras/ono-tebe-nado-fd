@@ -2,9 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
@@ -26,6 +30,9 @@ blockquote {
 }
 
 a {
+  display: block;
+  margin: 0;
+  padding: 0;
   color: inherit;
 }
 
@@ -34,5 +41,60 @@ img {
 }
 
 button {
+  margin: 0;
+  border: 0;
+  padding: 0;
   font: inherit;
+}
+
+address {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+}
+
+/* .aligned-text {
+  display: block;
+  
+}
+.aligned-text-center {
+  display: block;
+  text-align: center;
+}
+.aligned-text-right {
+  display: block;
+  text-align: right;
+} */
+
+article {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+.image-cover {
+  background-position: center;
+  background-size: cover;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+.letter-spacing-extended {
+  letter-spacing: 1.3rem;
+  /* text-indent: 1.3em; */
+}
+.block {
+  display: block;
 }
