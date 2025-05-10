@@ -9,9 +9,6 @@
   padding-left: 50px;
 }
 
-/* .header__nav{
-    padding-top: 90px;
-} */
 .header__menu {
   display: flex;
   gap: 32px;
@@ -21,9 +18,11 @@
   line-height: 100%;
   list-style: circle;
 }
+
 .header__menu li:first-child {
   list-style-type: none;
 }
+
 .header__menu li:not(:first-child) {
   text-decoration: underline;
 }
@@ -62,7 +61,31 @@
   color: #ffffff;
   background-image: url("../images/cover.jpg");
 }
+
+.aligned-text {
+  z-index: 1;
+  display: block;
+}
+
+.aligned-text-center {
+  z-index: 1;
+  display: block;
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.aligned-text-right {
+  z-index: 1;
+  display: block;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+
 .main__cover__title {
+  position: inherit;
+  z-index: 1;
   /* display: grid;
   grid-template-areas:
     "item_left_top . ."
@@ -71,8 +94,6 @@
   justify-items: center;
   align-items: center; */
   padding-top: 165px;
-  /* height: 385px; */
-  padding-right: 50px;
   padding-left: 50px;
   font-family: Raleway;
   font-weight: 700;
@@ -80,7 +101,7 @@
   text-transform: uppercase;
 }
 
-.main__cover__title__item_left_top {
+/* .main__cover__title__item_left_top {
   z-index: 1;
   grid-area: item_left_top;
 }
@@ -91,7 +112,7 @@
 .main__cover__title__item_right_bottom {
   z-index: 1;
   grid-area: item_right_bottom;
-}
+} */
 
 .main__cover__description {
   z-index: 1;
@@ -114,6 +135,7 @@
   z-index: 1;
   word-spacing: 19px;
 }
+
 .main__cover__description__button {
   z-index: 1;
   border: 1px solid #ffffff;
@@ -172,9 +194,11 @@
 .main__lots__item__films {
   background-image: url("../images/card-lot-01.jpg");
 }
+
 .main__lots__item__books {
   background-image: url("../images/card-lot-02.jpg");
 }
+
 .main__lots__item__images {
   background-image: url("../images/card-lot-03.jpg");
 }
@@ -224,6 +248,7 @@
   line-height: 100%;
   text-decoration: underline;
 }
+
 .main__about {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -247,6 +272,7 @@
   border-radius: 50%;
   background-color: #000000;
 }
+
 .main_about_logo_image {
   width: 148px;
   height: 114px;
@@ -262,9 +288,11 @@
   line-height: 100%;
   text-transform: uppercase;
 }
+
 .main__about__text {
   grid-area: text;
 }
+
 .main_about_text_top {
   padding-right: 25px;
   padding-bottom: 24px;
@@ -274,6 +302,7 @@
   font-size: 20px;
   line-height: 24px;
 }
+
 .main_about_text_bottom {
   padding-right: 0px;
   padding-left: 25px;
@@ -288,14 +317,15 @@
   grid-template-columns: 1fr min-content 1fr;
   padding-top: 190px;
   padding-right: 50px;
-  padding-left: 50px;
   padding-bottom: 80px;
+  padding-left: 50px;
 }
 
 .footer__contacts {
   justify-self: start;
   max-width: 260px;
 }
+
 .footer__menu {
   display: flex;
   flex-direction: column;
@@ -316,14 +346,17 @@
   gap: 48px;
   list-style: none;
 }
+
 .footer__socials__vk {
   width: 48px;
   height: 48px;
 }
+
 .footer__socials__pinterest {
   width: 48px;
   height: 48px;
 }
+
 .footer__socials__youtube {
   width: 48px;
   height: 48px;
