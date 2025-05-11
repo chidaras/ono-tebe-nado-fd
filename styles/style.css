@@ -2,17 +2,15 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
   padding-top: 90px;
   padding-right: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 94px;
   padding-left: 50px;
 }
 
 .header__menu {
   display: flex;
   gap: 32px;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -23,9 +21,9 @@
   list-style-type: none;
 }
 
-.header__menu li:not(:first-child) {
+/* .header__menu li:not(:first-child) {
   text-decoration: underline;
-}
+} */
 
 .header__logo {
   justify-self: center;
@@ -39,16 +37,22 @@
   background-size: cover;
 }
 
-.header__contacts {
-  justify-self: end;
+.header__contacts__size {
   max-width: 240px;
-  font-family: Raleway;
+}
+
+.contacts {
+  justify-self: end;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
 }
 
-.numbers_underline {
+.contacts__start {
+  justify-self: start;
+}
+
+.link_underline {
   /* line-height: 2px; */
   display: inline;
   border-block-end: 2px solid;
@@ -57,9 +61,12 @@
 
 .main__cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   color: #ffffff;
   background-image: url("../images/cover.jpg");
+  /* Для этого вообще есть отдельный класс image-cover? */
+  background-position: center;
+  background-size: cover;
 }
 
 .aligned-text {
@@ -71,7 +78,7 @@
   z-index: 1;
   display: block;
   padding-top: 15px;
-  padding-right: 15px;
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -79,7 +86,7 @@
   z-index: 1;
   display: block;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 25px;
   text-align: right;
 }
 
@@ -95,7 +102,7 @@
   align-items: center; */
   padding-top: 165px;
   padding-left: 50px;
-  font-family: Raleway;
+
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
@@ -124,7 +131,7 @@
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
-  font-family: Raleway;
+
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -138,13 +145,13 @@
 
 .main__cover__description__button {
   z-index: 1;
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   padding-top: 12px;
   padding-right: 32px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   padding-left: 31px;
   color: #ffffff;
-  font-family: Raleway;
+
   font-weight: 500;
   font-size: 22px;
   line-height: 100%;
@@ -164,13 +171,14 @@
 }
 
 .main__lots {
-  padding-top: 190px;
+  padding-top: 180px;
 }
 
 .main__lots__tittle {
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 29px;
   padding-left: 64px;
-  font-family: Raleway;
+
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
@@ -179,6 +187,7 @@
 
 .main__lots__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   padding-right: 24px;
   padding-left: 24px;
@@ -188,19 +197,28 @@
 .main__lots__list li {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 .main__lots__item__films {
   background-image: url("../images/card-lot-01.jpg");
+  /* Для этого вообще есть отдельный класс image-cover? */
+  background-position: center;
+  background-size: cover;
 }
 
 .main__lots__item__books {
   background-image: url("../images/card-lot-02.jpg");
+  /* Для этого вообще есть отдельный класс image-cover? */
+  background-position: center;
+  background-size: cover;
 }
 
 .main__lots__item__images {
   background-image: url("../images/card-lot-03.jpg");
+  /* Для этого вообще есть отдельный класс image-cover? */
+  background-position: center;
+  background-size: cover;
 }
 
 .main__lots__card {
@@ -218,7 +236,6 @@
   z-index: 1;
   padding-right: 40px;
   padding-left: 40px;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -226,23 +243,21 @@
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
   text-transform: uppercase;
-  /* text-decoration-offset: 0%; */
 }
 
 .main__lots__card__text {
   z-index: 1;
   padding-right: 40px;
   padding-left: 40px;
-  font-family: Raleway;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
 }
 
 .main__lots__more {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-left: 64px;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
@@ -251,13 +266,14 @@
 
 .main__about {
   display: grid;
+
   grid-template-columns: 334px 1fr;
   grid-template-areas:
     "logo tittle"
     ". text";
   justify-items: center;
   align-items: center;
-  padding-top: 165px;
+  padding-top: 155px;
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -283,7 +299,7 @@
   justify-self: left;
   padding-top: 5px;
   padding-left: 25px;
-  font-family: Raleway;
+
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
@@ -294,19 +310,14 @@
   grid-area: text;
 }
 
-.main_about_text_top {
+.main__about__text_top {
   padding-right: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  font-family: Raleway;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  padding-bottom: 20px;
 }
 
-.main_about_text_bottom {
+.main_about_text_block {
+  padding-top: 5px;
   padding-left: 25px;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -321,18 +332,13 @@
   padding-left: 50px;
 }
 
-.footer__contacts {
-  justify-self: start;
-  max-width: 260px;
-}
-
 .footer__menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2px;
   min-width: 165px;
-
-  font-family: Raleway;
+  padding-top: 5px;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -340,8 +346,8 @@
   list-style: none;
 }
 
-.footer__menu li:not(:first-child) {
-  text-decoration: underline;
+.footer__contacts__size {
+  max-width: 260px;
 }
 
 .footer__socials {
@@ -353,17 +359,7 @@
   list-style: none;
 }
 
-.footer__socials__vk {
-  width: 48px;
-  height: 48px;
-}
-
-.footer__socials__pinterest {
-  width: 48px;
-  height: 48px;
-}
-
-.footer__socials__youtube {
+.footer__socials_size {
   width: 48px;
   height: 48px;
 }
